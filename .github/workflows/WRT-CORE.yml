@@ -277,17 +277,6 @@ jobs:
             done
 
             find ./bin/targets/ -type f -exec mv -f {} ./upload/ \;
-         # ================= 新增：打包软件包 =================
-         if [ -d "./bin/packages/" ]; then
-           echo "开始打包 IPK/APK 软件包..."
-           mkdir -p ./upload/packages/
-           cp -rf ./bin/packages/* ./upload/packages/
-           cd ./upload/
-           zip -r -q "Packages-$WRT_INFO-$WRT_BRANCH-$WRT_DATE.zip" ./packages/
-           rm -rf ./packages/
-           cd ../
-         fi
-         # ==================================================
          
             make clean -j$(nproc)
           fi
