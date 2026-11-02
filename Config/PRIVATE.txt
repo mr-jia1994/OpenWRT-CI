@@ -3,7 +3,24 @@ CONFIG_TARGET_qualcommax=y                     # 选择 Qualcomm AXi 系列平�
 CONFIG_TARGET_qualcommax_ipq60xx=y             # 选择 IPQ60xx 子平台
 
 #============================ 设备列表 ============================
-CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_cmiot_ax18=y   # 编译 中国移动 AX18 机型
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_anysafe_e1=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_cmiot_ax18=y	  # 编译 中国移动 AX18 机型
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_dptech_ap3000-2c=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_glinet_gl-ax1800=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_glinet_gl-axt1800=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_jdcloud_re-cs-02=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_jdcloud_re-cs-07=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_jdcloud_re-ss-01=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_link_nn6000-v1=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_link_nn6000-v2=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_linksys_mr7350=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_linksys_mr7500=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_philips_ly1800=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_qihoo_360v6=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_redmi_ax5=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_redmi_ax5-jdcloud=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_sy_y6010=n
+CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_xiaomi_ax1800=n
 CONFIG_TARGET_DEVICE_qualcommax_ipq60xx_DEVICE_zn_m2=y        # 编译 兆能 M2 机型
 
 #============================ WIFI驱动 (全部已禁用) ============================
@@ -202,4 +219,3 @@ CONFIG_PACKAGE_usb-modeswitch=y                # USB 模式切换（4G 网卡、
 CONFIG_PACKAGE_usbmuxd=y                       # USB 多路复用守护进程（连接 iPhone）
 CONFIG_PACKAGE_usbutils=y                      # USB 设备查看工具（lsusb）
 CONFIG_PACKAGE_xz-utils=y                      # xz 压缩/解压工具
-
